@@ -1,0 +1,2 @@
+parameter_defaults:
+  NeutronBridgeMappings: "datacentre:br-ex"

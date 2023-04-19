@@ -1,0 +1,24 @@
+{
+    "results": [
+        {
+            "Duration": "0:00:01.578",
+            "Host_Group": "undercloud",
+            "Reasons": "",
+            "Status": "PASSED",
+            "Status_by_Host": "undercloud,PASSED",
+            "UUID": "546f7185-81e7-44fa-8cd4-e48e5d95b3ac",
+            "Unreachable_Hosts": "",
+            "Validations": "undercloud-disabled-services"
+        },
+        {
+            "Duration": "0:00:02.115",
+            "Host_Group": "undercloud",
+            "Reasons": "",
+            "Status": "PASSED",
+            "Status_by_Host": "undercloud,PASSED",
+            "UUID": "f70c4167-e9eb-4bc0-b1c2-2fac95e7989e",
+            "Unreachable_Hosts": "",
+            "Validations": "undercloud-disk-space"
+        }
+    ]
+}

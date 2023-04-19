@@ -1,0 +1,1 @@
+openstack overcloud deploy --templates --deployed-server -e ~/overcloud-baremetal-deployed.yaml -e ~/overcloud-vip-deployed.yaml -e ~/bridge_mappings.yaml 
