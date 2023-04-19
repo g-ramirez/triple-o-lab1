@@ -1,0 +1,4 @@
+- network: ctlplane
+  dns_name: overcloud
+- network: external
+  dns_name: overcloud

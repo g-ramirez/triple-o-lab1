@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "arch": "x86_64",
+      "disk": "80",
+      "memory": "10000",
+      "name": "compute01",
+      "pm_type": "pxe_ipmitool",
+      "ports": [
+         {
+           "address": "52:54:00:3e:ed:29",
+           "physical_network": "ctlplane"
+          },
+        {
+           "address": "52:54:00:4a:94:a6",
+           "physical_network": "external"
+          }
+       ],
+      "pm_addr": "192.168.24.1",
+      "pm_user" : "admin",
+      "pm_password" : "password",
+      "pm_port" : "6230",
+      "mac": [
+        "52:54:00:7b:8a:18"
+      ],
+      "cpu": "4"
+    },
+    {
+      "arch": "x86_64",
+      "disk": "80",
+      "memory": "10000",
+      "name": "storage01",
+      "pm_user": "admin",
+      "pm_addr": "192.168.24.254",
+      "bmc_address" : "192.168.24.254",
+      "pm_password": "password",
+      "pm_port": "6232",
+      "pm_type": "ipmi",
+      "mac": [
+        "52:54:00:be:ae:14"
+      ],
+      "ports": [
+         {
+           "address": "52:54:00:be:ae:14",
+           "physical_network": "ctlplane"
+          }
+       ],      
+      "cpu": "4"
+    },
+    {
+      "arch": "x86_64",
+      "disk": "80",
+      "memory": "10000",
+      "name": "controller01",
+      "pm_user": "admin",
+      "pm_addr": "192.168.24.254",
+      "bmc_address" : "192.168.24.254",
+      "pm_password": "password",
+      "pm_port": "6231",
+      "pm_type": "ipmi",
+      "mac": [
+        "52:54:00:01:e0:b1"
+      ],
+      "ports": [
+         {
+           "address": "52:54:00:01:e0:b1",
+           "physical_network": "ctlplane"
+          }
+       ],      
+      "cpu": "4"
+    }
+  ]
+}

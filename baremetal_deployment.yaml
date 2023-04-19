@@ -1,0 +1,18 @@
+- name: Controller
+  count: 1
+  hostname_format: controller-01
+  ansible_playbooks:
+    - playbook: bm-deploy-playbook.yaml
+  defaults:
+    profile: control
+    network_config:
+      template: templates/net_config_bridge.j2
+- name: Compute
+  count: 1
+  hostname_format: compute-01
+  ansible_playbooks:
+    - playbook: bm-deploy-playbook.yaml
+  defaults:
+    profile: compute
+    network_config:
+      template: templates/net_config_bridge.j2

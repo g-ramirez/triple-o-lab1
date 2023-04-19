@@ -1,0 +1,11 @@
+- name: External
+  name_lower: external
+  vip: true
+  mtu: 1500
+  subnets:
+    external_subnet:
+      ip_subnet: 192.168.122.0/24
+      allocation_pools:
+        - start: 192.168.122.2
+          end: 192.168.122.250
+      gateway_ip: 192.168.122.1
